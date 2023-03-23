@@ -50,7 +50,7 @@ void sort_timer_list::adjust_timer(util_timer *timer)
         head = head->next;
         head->prev = nullptr;
         timer->next = nullptr;
-        add_timer(timer, timer->next);
+        add_timer(timer, head);
     }
     else
     {
